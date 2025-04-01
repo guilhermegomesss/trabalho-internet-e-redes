@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    margin: 0;
+    font-family: Roboto, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.navbar {
+    background-color: #2A3D66;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+
+.intro-container {
+
+    width: 100%;
+    height: 700px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative; 
+}
+
+.intro-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background-image: url('../images/imagem\ introducao.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    opacity: 0.5; 
+    z-index: 1; 
+}
+
+
+.intro-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+.intro-text h1 {
+    text-align: left;
+    margin-top: 0px;
+    font-size: 2rem;
+    color: #2A3D66;
+    margin-bottom: 10px;
+}
+
+.intro-text p {
+    text-align: left;
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.6;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+
+.additional-info {
+    width: 100%;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.additional-info h2 {
+    font-size: 1.8rem;
+    color: #2A3D66;
+    margin-bottom: 10px;
+}
+
+.additional-info p {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+.additional-info ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.additional-info li {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+
+.section-title h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.section-title p {
+    font-size: 1.2rem;
+    color: #666;
+    font-style: italic;
+}
+
+.section-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.section-content img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.section-content img:hover {
+    transform: scale(1.1);
+}
+
+
+.section-text p {
+    font-size: 1.1rem;
+    color: #444;
+    max-width: 600px;
+}
+.encerramento {
+    background-color: #2A3D66;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.encerramento .section-title h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+
+
+.footer {
+    background-color: #2A3D66;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: rgb(40, 64, 116);
+        padding: 10px 0;
+        z-index: 5;
+    }
+
+    .nav-links.active {
+        display: flex; 
+    }
+
+    .menu-toggle {
+        display: block;
+
+    }
+    .intro-container {
+        height: auto;
+        padding: 15px;
+    }
+
+    .intro-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .intro-text p {
+        font-size: 1rem;
+    }
+
+    .additional-info {
+        padding: 10px;
+    }
+}
+.section {
+    padding: 20px;
+}
+
+.content {
+    padding: 10px;
+}
+

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet e Redes</title>
+    <link rel="stylesheet" href="css/style.css">
+   
+<body>
+    <nav class="navbar">
+        <div class="logo">PROZ - Redes</div>
+        <ul class="nav-links">
+            <li><a href="#introducao">Início</a></li>
+            <li><a href="#switch">Switch</a></li>
+            <li><a href="#hub">Hub</a></li>
+            <li><a href="#roteador">Roteador</a></li>
+            <li><a href="#modem">Modem</a></li>
+            <li><a href="#repetidor">Repetidor</a></li>
+            <li><a href="#bridge">Bridge</a></li>
+        </ul>
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+    </nav>
+
+    
+    <section id="introducao" class="intro-container">
+        <div class="intro-content">
+            <div class="intro-text">
+                <h1>Trabalho de Redes de Computadores</h1>
+                <p>O trabalho foi desenvolvido por <strong>Guilherme Gomes</strong> e <strong>Eduardo</strong>, com o objetivo de explorar e entender os principais dispositivos utilizados em redes de computadores, como switches, roteadores, hubs, e outros componentes essenciais para a comunicação de dados.</p>
+                <p>Este projeto é parte do curso de Desenvolvimento de Sistemas da PROZ, e tem como foco entender a infraestrutura por trás da internet e como os dados são trafegados de maneira eficiente através de dispositivos como switches e roteadores.</p>
+            </div>
+    
+        </div>
+        <div class="additional-info">
+            <h2>Objetivos do Trabalho</h2>
+            <p>Durante este trabalho, exploramos:</p>
+            <ul>
+                <li><strong>Switches</strong> - Entendemos como os switches ajudam a conectar diferentes dispositivos em uma rede, permitindo a comunicação eficiente e direcionada de pacotes de dados.</li>
+                <li><strong>Roteadores</strong> - Investigamos como os roteadores são responsáveis por encaminhar pacotes entre redes distintas, facilitando a comunicação entre diferentes segmentos de rede.</li>
+                <li><strong>Hubs</strong> - Dispositivos simples, mas essenciais para entender as redes locais, com o foco em sua utilidade e limitações.</li>
+                <li><strong>Outros dispositivos</strong> - Como modens, repetidores e bridges, que também são fundamentais para expandir e melhorar a comunicação de redes.</li>
+            </ul>
+            <p>Com a realização deste trabalho, buscamos entender como as redes funcionam de forma mais profunda e como podemos utilizar esses dispositivos de maneira eficaz para melhorar a conectividade e o tráfego de dados nas redes.</p>
+        </div>
+    </section>
+
+    
+
+<section class="section" id="switch">
+    <div class="container">
+        <div class="section-title">
+            <h2>Switch - O Comutador de Redes</h2>
+            <p>Entenda como o switch melhora a eficiência da comunicação na sua rede local.</p>
+        </div>
+        <div class="section-content">
+            <img src="images/switch.png" alt="Imagem do Switch">
+            <div class="section-text">
+                <p>
+                    O <strong>Switch</strong> é um dispositivo fundamental em redes locais (LANs), responsável por gerenciar o tráfego de dados entre os dispositivos conectados. Diferentemente dos hubs, que enviam os dados para todos os dispositivos, o switch é mais inteligente: ele envia dados apenas para o dispositivo de destino, garantindo maior eficiência na comunicação.
+                </p>
+                <p>
+                    Ao identificar os endereços MAC dos dispositivos conectados, o switch encaminha os pacotes de forma precisa, otimizando a largura de banda e minimizando o congestionamento da rede. Ele é essencial para redes corporativas e domésticas que exigem alto desempenho.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section" id="hub">
+    <div class="container">
+        <div class="section-title">
+            <h2>Hub - O Conector Simples</h2>
+            <p>Embora ultrapassado, o hub ainda tem um papel nas redes locais mais simples.</p>
+        </div>
+        <div class="section-content">
+            <img src="images/hub.png" alt="Imagem do Hub">
+            <div class="section-text">
+                <p>
+                    O <strong>Hub</strong> é um dispositivo simples utilizado para conectar vários dispositivos em uma rede local. Quando um dispositivo envia um pacote de dados, o hub transmite esse pacote para todos os outros dispositivos conectados, sem discernir quem é o destinatário. Isso pode gerar congestionamentos e colisões de dados.
+                </p>
+                <p>
+                    Apesar de ser mais barato e fácil de implementar, o hub é menos eficiente do que o switch, pois causa uma utilização excessiva da largura de banda e pode resultar em problemas de desempenho. Hoje em dia, o hub foi em grande parte substituído por switches mais modernos.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section" id="roteador">
+    <div class="container">
+        <div class="section-title">
+            <h2>Roteador - Conectando Redes Distintas</h2>
+            <p>Saiba como o roteador permite a comunicação entre redes diferentes, incluindo a internet.</p>
+        </div>
+        <div class="section-content">
+            <img src="images/roteador.png" alt="Imagem do Roteador">
+            <div class="section-text">
+                <p>
+                    O <strong>Roteador</strong> é responsável por conectar diferentes redes, como uma rede doméstica e a internet. Ele distribui o tráfego de dados entre essas redes, permitindo a comunicação entre dispositivos de diferentes segmentos de rede. O roteador também gerencia endereços IP e executa funções de segurança, como firewalls, para proteger a rede interna.
+                </p>
+                <p>
+                    Quando você se conecta à internet em casa, o roteador é o dispositivo que permite a comunicação entre seu computador e o provedor de serviços de internet (ISP). Além disso, muitos roteadores modernos oferecem a funcionalidade de Wi-Fi, permitindo a conexão sem fio de vários dispositivos.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="modem">
+    <div class="container">
+        <div class="section-title">
+            <h2>Modem - A Porta de Entrada para a Internet</h2>
+            <p>Descubra como o modem transforma sinais analógicos em digitais, possibilitando a conexão à internet.</p>
+        </div>
+        <div class="section-content">
+            <img src="images/modem.png" alt="Imagem do Modem">
+            <div class="section-text">
+                <p>
+                    O <strong>Modem</strong> (modulador-demodulador) é um dispositivo que converte sinais digitais em sinais analógicos e vice-versa. Ele é responsável por estabelecer a conexão à internet, seja por cabo, DSL ou fibra ótica. O modem conecta sua rede local ao provedor de internet (ISP), tornando possível o acesso à web.
+                </p>
+                <p>
+                    O modem recebe os sinais do provedor e os converte em dados que podem ser lidos pelos dispositivos da sua rede local. Sem ele, você não conseguiria acessar a internet, pois ele realiza a comunicação entre a rede interna e a infraestrutura externa do provedor de serviços de internet.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="repetidor">
+    <div class="container">
+        <div class="section-title">
+            <h2>Repetidor - Amplificando o Sinal</h2>
+            <p>Entenda como o repetidor pode estender o alcance da sua rede Wi-Fi ou cabeada.</p>
+        </div>
+        <div class="section-content">
+            <img src="images/repetidor.png" alt="Imagem do Repetidor">
+            <div class="section-text">
+                <p>
+                    O <strong>Repetidor</strong> é um dispositivo usado para ampliar o alcance de uma rede, especialmente redes Wi-Fi. Ele recebe o sinal da rede original e o retransmite com maior intensidade, permitindo que dispositivos distantes se conectem sem perda de sinal.
+                </p>
+                <p>
+                    Repetidores são extremamente úteis em grandes áreas, como escritórios ou residências com vários andares, onde o sinal Wi-Fi de um roteador não alcança todos os cantos. O repetidor ajuda a melhorar a cobertura, garantindo uma conexão mais estável e rápida.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="bridge">
+    <div class="container">
+        <div class="section-title">
+            <h2>Bridge - Conectando Redes Distintas</h2>
+            <p>Veja como a bridge conecta duas redes e melhora o tráfego de dados entre elas.</p>
+        </div>
+        <div class="section-content">
+            <img src="images/bridge.png" alt="Imagem da Bridge">
+            <div class="section-text">
+                <p>
+                    A <strong>Bridge</strong> é um dispositivo de rede utilizado para conectar duas redes separadas, permitindo que elas funcionem como uma única rede. Ela trabalha filtrando os pacotes de dados entre as duas redes com base nos endereços MAC e retransmitindo os pacotes apenas quando necessário.
+                </p>
+                <p>
+                    Bridges são úteis para segmentar redes e reduzir a carga em cada segmento. Elas também podem ser usadas para interligar redes que operam em diferentes tipos de mídia, como uma rede cabeada e uma sem fio. Esse dispositivo melhora o desempenho da rede e facilita a gestão do tráfego de dados.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="encerramento">
+    <div class="container">
+        <div class="section-title">
+            <h2>Encerramento</h2>
+            <p>Gostou do trabalho? Da uma moral de dar total pra nois fessor.</p>
+        </div>
+       
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2025 - Todos os direitos reservados a <strong>Guilherme e Eduardo</strong></p>
+    </div>
+</footer>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
